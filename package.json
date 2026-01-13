@@ -1,0 +1,30 @@
+{
+  "name": "mathscript-vscode",
+  "displayName": "MathScript",
+  "description": "Extensión mínima de VSCode para MathScript",
+  "version": "1.0.0",
+  "publisher": "ianlangs",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Programming Languages"],
+  "activationEvents": ["onLanguage:mathscript"],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "mathscript",
+        "aliases": ["MathScript", "ms"],
+        "extensions": [".ms"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mathscript",
+        "scopeName": "source.mathscript",
+        "path": "./syntaxes/mathscript.tmLanguage.json"
+      }
+    ]
+  }
+}
