@@ -1,9 +1,11 @@
 {
   "scopeName": "source.mathscript",
+  "name": "MathScript",
   "patterns": [
-    { "name": "keyword.control.mathscript", "match": "\\b(fn|mut|immut|using)\\b" },
-    { "name": "constant.numeric.mathscript", "match": "\\b\\d+(\\.\\d+)?\\b" },
-    { "name": "string.quoted.double.mathscript", "begin": "\"", "end": "\"" },
-    { "name": "comment.line.double-slash.mathscript", "match": "//.*$" }
+    { "include": "source.js" },
+    {
+      "match": "\\b(fn|mut|immut|using)\\b",
+      "name": "keyword.mathscript"
+    }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "fn": {
+    "prefix": "fn",
+    "body": ["fn ${1:name}() {", "\t$0", "}"],
+    "description": "Define una función"
+  },
+  "mut": {
+    "prefix": "mut",
+    "body": ["mut ${1:var} = ${2:value}"],
+    "description": "Variable mutable"
+  },
+  "immut": {
+    "prefix": "immut",
+    "body": ["immut ${1:var}"],
+    "description": "Variable inmutable"
+  }
+}

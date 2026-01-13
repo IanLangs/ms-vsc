@@ -1,12 +1,10 @@
 {
   "name": "mathscript-vscode",
   "displayName": "MathScript",
-  "description": "Extensión mínima de VSCode para MathScript",
+  "publisher": "ian carlos",
+  "description": "Extensión completa de MathScript para VSCode",
   "version": "1.0.0",
-  "publisher": "ianlangs",
-  "engines": {
-    "vscode": "^1.80.0"
-  },
+  "engines": { "vscode": "^1.80.0" },
   "categories": ["Programming Languages"],
   "activationEvents": ["onLanguage:mathscript"],
   "main": "./extension.js",
@@ -24,6 +22,18 @@
         "language": "mathscript",
         "scopeName": "source.mathscript",
         "path": "./syntaxes/mathscript.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "mathscript",
+        "path": "./snippets/snippets.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "mathscript.transpile",
+        "title": "MathScript: Transpile"
       }
     ]
   }
